@@ -39,7 +39,8 @@ Detalle de la orden de compra {{orden.oc_numero}} - {{block.super}}
       <td><strong>{{orden.importe|currency}}</strong></td>
     </tr>
 </table>
-<p>Debido a la implementación de la sección de compras en el sitio de la Municipalidad de General Pueyrredón, no podemos proveer un enlace directo a la fuente oficial de la información para esta órden de compra. Para verificar los datos aquí exhibidos, <a href="http://www.bahiablanca.gov.ar/compras/comprasrealizadas.aspx">ingrese al sitio de MBB</a> y busque la OC <strong>{{orden.oc_numero}}</strong> del año <strong>{{orden.fecha.year}}</strong> adjudicada al proveedor <strong>{{orden.proveedor}}</strong>
+<p><a href="http://appsvr.mardelplata.gob.ar/Consultas07/OrdenesDeCompra/OC/detalle_OC.asp?fmNRO_OC={{orden.orden_compra}}&ANIO={{orden.fecha.year}}&BOTON=b">Ver esta orden de compra en el sitio de la Municipalidad de General Pueyrredon</a></p>
+
 </div>
 
 {% endblock %}
